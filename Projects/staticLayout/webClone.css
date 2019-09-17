@@ -1,0 +1,13 @@
+html {
+    background-color: rgb(230, 230, 230);
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+
+}
+
+h1 {
+    font-size: 44px;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+    font-weight: 200;
+    margin-bottom: 16px;
+}
