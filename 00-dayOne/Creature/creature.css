@@ -1,0 +1,133 @@
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+#background{
+    background: linear-gradient(rgb(0, 0, 0), darkgrey);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+img {
+    opacity: 0.5;
+}
+.ghost {
+    width: 117px;
+    height: 110px;
+    opacity: 0.2;
+    border: solid 1px black;
+    border-radius: 50px 50px 0px 0px;
+    color: black;
+    background-color: black;
+    pointer-events: none;
+    transition: 0.2s;
+    
+}
+.leftEye {
+    width:20px;
+    height:50px;
+    border: solid 1px black;
+    border-radius: 40px 40px 40px 40px;
+    position: relative;
+    left: 24px;
+    top: -80px;
+    background-color: white;
+    opacity: 1;
+}
+.rightEye {
+    width:20px;
+    height:50px;
+    border: solid 1px black;
+    border-radius: 40px 40px 40px 40px;
+    position: relative;
+    left: 74px;
+    top: -130px;
+    background-color: white;
+    opacity: 1;
+}
+.ghostBottom {
+    opacity: 0.2;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 12.5px 0 12.5px;
+    border-color: black transparent transparent transparent;
+    left: 0px;
+    top: -104px;
+    position: relative;
+}
+.ghostBottom2 {
+    opacity: 0.2;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 12.5px 0 12.5px;
+    border-color: black transparent transparent transparent;
+    left: 24px;
+    top: -124px;
+}
+.ghostBottom3 {
+    opacity: 0.2;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 12.5px 0 12.5px;
+    border-color: black transparent transparent transparent;
+    left: 48px;
+    top: -144px;
+}
+.ghostBottom4 {
+    opacity: 0.2;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 12.5px 0 12.5px;
+    border-color: black transparent transparent transparent;
+    left: 72px;
+    top: -164px;
+}
+.ghostBottom5 {
+    opacity: 0.2;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 12.5px 0 12.5px;
+    border-color: black transparent transparent transparent;
+    left: 95px;
+    top: -184px;
+}
+
+#Instructions{
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    margin: auto;
+    margin-top: 80px;
+    font-family: sans-serif;
+    color: black;
+    font-size: 1.2em;
+    text-transform: Uppercase;
+    text-align: center;
+}
+
+#Facebook{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: red;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: left;
+}

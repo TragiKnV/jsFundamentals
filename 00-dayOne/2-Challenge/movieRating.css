@@ -1,0 +1,16 @@
+html {
+    background-image: radial-gradient(white, orange);
+    background
+}
+
+.h2 {
+    font-weight: 2000;
+    color: black;
+    text-align: center;
+}
+
+.movies {
+    text-align: center;
+    border: 3px solid black;
+    background-color: lightskyblue;
+}

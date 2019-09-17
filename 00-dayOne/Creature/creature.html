@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="creature.css">
+    <title>Friendly Ghost</title>
+</head>
+<div id="background"></div>
+<marquee behavior="scroll" direction="left">
+        <img src="http://blog-pebblecreeklakemary.com/wp-content/uploads/2016/10/boo-for-blog-2-300x200.jpg" width="120" height="80" alt="boo" />
+      </marquee>  
+<body onload = "followMouse();">
+    
+    <div class="wrapper">
+            <div class="ghost"></div>
+            <div class="leftEye"></div>
+            <div class="rightEye"></div>
+            <div class="ghostBottom"></div>
+            <div class="ghostBottom2"></div>
+            <div class="ghostBottom3"></div>
+            <div class="ghostBottom4"></div>
+            <div class="ghostBottom5"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+var $ = document.querySelector.bind(document);
+var $on = document.addEventListener.bind(document);
+
+var xmouse, ymouse;
+$on('mousemove', function(e){
+    xmouse = e.clientX || e.pageX;
+    ymouse = e.clientY || e.pageY;
+});
+
+var wrapper = $('.wrapper');
+var x = void 0,
+    y = void 0,
+    dx = void 0,
+    dy = void 0,
+    tx = 0,
+    ty = 0,
+    key = -1;
+
+var followMouse = function followMouse() {
+    key = requestAnimationFrame(followMouse);
+
+    if(!x || !y){
+        x = xmouse;
+        y = ymouse;
+    } else {
+        dx = (xmouse - x) * 0.125;
+        dy = (ymouse - y) * 0.125;
+        if(Math.abs(dx) + Math.abs(dy) < 0.1) {
+            x = xmouse;
+            y = ymouse;
+        } else {
+            x += dx;
+            y += dy;
+        }
+    }
+    wrapper.style.left = x + 'px';
+    wrapper.style.top = y + 'px';
+};
+
+</script>
+</body>
+<div id="Instructions">Move it!</div>
+
+<div id="Facebook">
+        <p><a href="https://www.facebook.com/jameshiggins.3139">Let's Be Friends!</a></p>
+        </div>
+
+</html>
