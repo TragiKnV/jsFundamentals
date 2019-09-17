@@ -1,0 +1,28 @@
+// let weather = 75;
+
+// if(weather < 70) {
+//     console.log('wear a jacket'); 
+// } else {
+//     console.log('no jacket necessary');
+// }
+
+
+// let name = 'James';
+
+// if(name == 'James') {
+//     console.log('Hello, my name is ' + name);
+// } else {
+//     console.log('Hello, is your name ' + name + '?');
+// }
+
+let name = 'nAmEs'
+let sL = name.length;
+var i = 0;
+for(; i < sL; i) {
+    if(name.charAt(i) === name.charAt(i).toUpperCase()) {
+        console.log('uppercase:',name.charAt(i));
+} else {
+    console.log(name)
+}
+
+}
