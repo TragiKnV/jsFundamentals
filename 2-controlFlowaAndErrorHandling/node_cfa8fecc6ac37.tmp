@@ -1,8 +1,0 @@
-let name = 'nAmEs'
-var sL = name.length;
-var i = 0;
-for (; i < sL;) {
-    if (name.charAt(i) === name.charAt(i).toLowerCase()) {
-        console.log('lowercase:',name.charAt(i));
-    }
-}

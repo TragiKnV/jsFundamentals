@@ -22,6 +22,7 @@ let num = 6;
 
 // (num == 0) ? console.log('hello') : (num < 0) ? console.log('hi') : console.log('goodbye');
 // // can also be written like the example below
+
 // (num == 0) ? console.log('hello')
 //     : (num < 0) ? console.log('Hi')
 //     : console.log('goodbye');
